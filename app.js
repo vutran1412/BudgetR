@@ -1,26 +1,38 @@
 var budgetController = (function() {
-    var x = 23
-    var add = function(a) {
-        return x + a
-    } 
-
-    return {
-        publicTest: function(b) {
-            return add(b)
-        }
-    }
+    
 })()
 
 var UIController = (function() {
-    // 
+    // Display the Income and Expenses
 })()
 
 var controller = (function(budgetCtrl, UICtrl) {
-    var z = budgetCtrl.publicTest(5)
-    return {
-        public2: function() {
-            console.log(z)
-        }
-    }
+    document.querySelector('.add__btn').addEventListener('click', () => {
+        // Get the field input data
+
+        // Add the item to the budget controller
+
+        // Add the item to the UI
+
+        // Calcultate the budget
+
+        // Display the budget to the UI
+    })
+
+
+    document.addEventListener('keypress', (event) => {
+        // if keycode is enter then get the field input data
+
+        // Add the item to teh budget controller
+
+        // add the item to the UI
+
+        // Calculate the budget
+
+        // Display the budget to the UI
+    })
+
 
 })(budgetController, UIController)
+
+
